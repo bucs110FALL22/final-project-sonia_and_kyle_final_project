@@ -1,6 +1,6 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 # CS110 Project Proposal
-# << Project Title >>
+# Make Your Own Pizza
 ## CS 110 Final Project
 ### Fall 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit?usp=sharing)
@@ -9,7 +9,7 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: Dumb and Dumber
+### Team: Sonia & Kyle
 #### Sonia Rai and Kyle Mejorada
 
 ***
