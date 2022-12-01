@@ -32,7 +32,6 @@ def circle(surface, color, center, radius):
   for i in range(15):
     pygame.draw.circle(window, '#AB3E24',(xcoord, ycoord), 6)
 
-
 #sausage
 def rectangle(surface, color, rect, border_radius):
   for i in range(15):
