@@ -2,41 +2,23 @@ import pygame
 import sys
 
 pygame.init()
+window = pygame.display.set_mode(size = (500,300))
+windowsize = pygame.display.get_window_size()
 
-res = (720,720)
 
-screen = pygame.display.set_mode(res)
 color_light = ('lightpink')
 color_dark = ('palevioletred')
 
-width = screen.get_width()
+pygame.draw.rect(window, color_dark, [590,315,80])
 
-height = screen.get_height()
+smallfont = pygame.font.sysfont('corbel', 16)
+text = smallfont.render('START', True, color_light)
+window.blit(text, (600,320))
 
-smallfont = pygame.font.SysFont('corbel', 35)
-text = smallfont.render('quit' , True , color)
-  
+mouse = pygame.mouse.get_pos()
+
 while True:
-      
-    for ev in pygame.event.get():
-          
-        if ev.type == pygame.QUIT:
-            pygame.quit()
-              
-        if ev.type == pygame.MOUSEBUTTONDOWN:
-              
-            if width/2 <= mouse[0] <= width/2+140 and height/2 <= mouse[1] <= height/2+40:
-                pygame.quit()
-                  
-    screen.fill((60,25,60))
-    
-    mouse = pygame.mouse.get_pos()
-if width/2 <= mouse[0] <= width/2+140 and height/2 <= mouse[1] <= height/2+40:
-        pygame.draw.rect(screen,color_light,[width/2,height/2,140,40])
-          
-else:
-        pygame.draw.rect(screen,color_dark,[width/2,height/2,140,40])
-      
-screen.blit(text , (width/2+50,height/2))
-      
-pygame.display.update()
+  for event in pygame.event.get():
+    if event.type == pygame.MOUSEBUTTONDOWN:
+      if 590 <= mouse[0] <= 670 and 315 <= mouse[1] <= 345:
+        print("test works")
