@@ -1,4 +1,4 @@
-from src.Controller import Controller
+from src import Controller
 import pygame
 import random
 #import your controller
