@@ -27,6 +27,7 @@ class Controller:
   ### below are some sample loop states ###
 
   def menuloop(self):
+    pass
     #event loop
 
       #update data
