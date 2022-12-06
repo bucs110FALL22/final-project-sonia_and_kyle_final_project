@@ -2,17 +2,19 @@ import pygame
 import sys
 
 pygame.init()
-window = pygame.display.set_mode(size=(500, 300))
-windowsize = pygame.display.get_window_size()
+screen_width=500
+screen_height=500
+screen = pygame.display.set_mode([screen_width, screen_height])
+screensize = pygame.display.get_screen_size()
 
 color_light = ('lightpink')
 color_dark = ('palevioletred')
 
-pygame.draw.rect(window, color_dark, [590, 315, 80])
+pygame.draw.rect(screen, color_dark, [590, 315, 80])
 
 smallfont = pygame.font.sysfont('corbel', 16)
 text = smallfont.render('START', True, color_light)
-window.blit(text, (600, 320))
+screen.blit(text, (600, 320))
 
 mouse = pygame.mouse.get_pos()
 
