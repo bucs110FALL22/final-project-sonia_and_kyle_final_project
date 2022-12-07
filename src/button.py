@@ -1,11 +1,10 @@
 import pygame
-import sys
+import math
 
 pygame.init()
 screen_width=500
 screen_height=500
 screen = pygame.display.set_mode([screen_width, screen_height])
-screensize = pygame.display.get_screen_size()
 
 color_light = ('lightpink')
 color_dark = ('palevioletred')

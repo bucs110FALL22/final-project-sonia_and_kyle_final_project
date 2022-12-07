@@ -1,3 +1,5 @@
+import pygame
+
 class Controller:
   
   def __init__(self):
@@ -8,8 +10,8 @@ class Controller:
     windowsize = pygame.display.get_window_size()
     radius = int(windowsize[0]/2)
     center_of_screen = (windowsize[0]/2, windowsize[1]/2)
-    self.controller = Screens()
-    window.fill("darkslategrey")
+    #self.controller = Screens()
+    self.screen.fill("darkslategrey")
     
   def mainloop(self):
     #select state loop
@@ -17,12 +19,13 @@ class Controller:
     in_menu = True
       #update data
     while in_menu == True:
-      playerSelection = self.controller.update_menu(self.screen)
-      if playerSelection != 0:
-        self.gameloop(playerSelection)
+      pass
+      #playerSelection = self.controller.update_menu(self.screen)
+      #if playerSelection != 0:
+        #self.gameloop(playerSelection)
       #redraw
-      pygame.display.flip()
-    return playerSelection
+      #pygame.display.flip()
+    #return playerSelection
   
   ### below are some sample loop states ###
 

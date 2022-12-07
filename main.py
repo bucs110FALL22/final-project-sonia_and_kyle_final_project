@@ -1,12 +1,12 @@
-from src import Controller
+from src.Controller import Controller
 import pygame
 import random
 #import your controller
 
 pygame.init()
 
-xcoord = random.randrange(0, windowsize[0])
-ycoord = random.randrange(0, windowsize[1])
+# xcoord = random.randrange(0, windowsize[0])
+# ycoord = random.randrange(0, windowsize[1])
 
 def main():
     pygame.init()
