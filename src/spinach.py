@@ -1,17 +1,20 @@
 import pygame
+import random
 
 pygame.init()
+
 x = 600
 y = 600
 
 screen = pygame.display.set_mode((x,y))
 
+for i in range(10):
+  x = random.randrange(150, 250)
+  y = random.randrange(160, 200)
+  spinach = pygame.image.load('assets/spinach.png')
+  spinach = pygame.transform.scale(spinach, (30,30))
+  screen.blit(spinach, (x,y))
 
-spinach = pygame.image.load('assets/spinach.png')
-spinach = pygame.transform.scale(spinach, (70,70))
-
-
-screen.blit(spinach, (25,0))
 
 pygame.display.flip()
 

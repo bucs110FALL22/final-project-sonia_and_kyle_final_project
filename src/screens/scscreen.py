@@ -66,24 +66,37 @@ class Button():
         ])
         screen.blit(self.buttonSurface, self.buttonRect)
 
-def myFunction():
+def myTomatosc():
+    print('test works')
+    myTomatosc = True
+def myPesto():
+    print('test works')
+    myPesto = True
+def myAlfredo():
+    print('test works')
+    myAlfredo = True
+def myBbq():
+    print('test works')
+    myBbq = True
+
+  
+def myBack():
     print('test works')
 def myNext():
     print('test works')
-def myBack():
-    print('test works')
 
-tomato = Button(95 , 165, 120, 30, 'TOMATO', myFunction)
-pesto = Button(95, 115, 120, 30, 'PESTO', myFunction)
-alfredo = Button(235, 165, 120, 30, 'ALFREDO', myFunction)
-barbecue = Button(235, 115, 120, 30, 'BARBECUE', myFunction)
+tomatosc = Button(95 , 165, 120, 30, 'TOMATO', myTomatosc)
+pesto = Button(95, 115, 120, 30, 'PESTO', myPesto)
+alfredo = Button(235, 165, 120, 30, 'ALFREDO', myAlfredo)
+barbecue = Button(235, 115, 120, 30, 'BARBECUE', myBbq)
 
-next = Button(270, 290, 120, 30, 'NEXT', myNext)
-back = Button(50, 290, 120, 30, 'BACK', myBack)
+back = Button(50, 290, 90, 30, '<<back', myBack)
+next = Button(300, 290, 90, 30, 'next>>', myNext)
+
 
 while True:
   screen.fill("#D9E5D6")
-  font = pygame.font.SysFont('arial', 30)
+  font = pygame.font.SysFont('arial', 30, bold = pygame.font.Font.bold)
   text = font.render("PICK YOUR SAUCE!", True, 'darkseagreen')
   textRect = text.get_rect()
   textRect.center = (225, 40)

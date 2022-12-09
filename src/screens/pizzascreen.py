@@ -22,6 +22,14 @@ while True:
   textRect = text.get_rect()
   textRect.center = (225, 40)
   screen.blit(text,textRect)
+
+crust = pygame.image.load('assets/crust.png').convert_alpha()
+crust = pygame.transform.scale(crust, (300,300))
+screen.blit(crust, (80,10))
   
+tomatosc = pygame.image.load('assets/tomatosauce.png').convert_alpha()
+tomatosc = pygame.transform.scale(tomatosc, (70,70))
+screen.blit(tomatosc, (25,0))
+
 
 

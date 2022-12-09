@@ -86,11 +86,13 @@ def mySausage():
 def myHam():
     print('test works')
     myHam = True
-def myNext():
-    print('test works')
+  
+
 def myBack():
     print('test works')
     myBack = True
+def myNext():
+    print('test works')
   
 tomato = Button(95 , 95, 120, 30, 'TOMATOES', myTomato)
 spinach = Button(95, 145, 120, 30, 'SPINACH', mySpinach)
@@ -100,12 +102,13 @@ pepperoni = Button(95, 195, 120, 30, 'PEPPERONI', myPepperoni)
 sausage = Button(235, 195, 120, 30, 'SAUSAGE', mySausage)
 ham = Button(155, 245, 120, 30, 'HAM', myHam)
 
-next = Button(270, 290, 120, 30, 'NEXT', myNext)
-back = Button(50, 290, 120, 30, 'BACK', myBack)
+back = Button(50, 290, 90, 30, '<<back', myBack)
+next = Button(300, 290, 90, 30, 'next>>', myNext)
+
 
 while True:
   screen.fill("#D9E5D6")
-  font = pygame.font.SysFont('arial', 30)
+  font = pygame.font.SysFont('arial', 30, bold = pygame.font.Font.bold)
   text = font.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
   textRect = text.get_rect()
   textRect.center = (225, 40)

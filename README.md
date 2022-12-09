@@ -28,7 +28,8 @@ The object of the game is simply to create your own pizza. Choose between many d
     
 - **Final GUI**
   ![welcomescreen](welcomescreen.png)
-
+  ![scsscreen](scsscreen.png)
+  ![image](image.png)
 ***        
 
 ## Program Design
@@ -92,4 +93,4 @@ Worked on individual screens together and debugged each block of code before mov
 |  6                   |  click any of the topping options  |  whichever topping is clicked is recorded  |
 |  7                   | click next button  |  display changes to pizza screen  |
 |  8                   |  click back button  |  display is changed to sauce screen  |
-|  9                   |  
+
