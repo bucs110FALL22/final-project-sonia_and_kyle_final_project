@@ -7,11 +7,11 @@ y = 600
 screen = pygame.display.set_mode((x,y))
 
 
-crust = pygame.image.load('assets/crust.png').convert_alpha()
-crust = pygame.transform.scale(crust, (300,300))
+pesto = pygame.image.load('assets/pestosauce.png').convert_alpha()
+pesto = pygame.transform.scale(pesto, (70,70))
 
 
-screen.blit(crust, (80,10))
+screen.blit(pesto, (25,0))
 
 pygame.display.flip()
 

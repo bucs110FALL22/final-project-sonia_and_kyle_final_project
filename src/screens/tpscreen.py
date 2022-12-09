@@ -1,17 +1,12 @@
 import sys
 import pygame
 
-
 pygame.init()
 fps = 60
 fpsClock = pygame.time.Clock()
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
-
-#title = pygame.font.SysFont('arial', 50)
-#pygame.title.Font.set_bold()
-#title.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
- 
+title = pygame.display.set_caption("choose toppings")
 
 
 font = pygame.font.SysFont('arial', 16)
@@ -70,18 +65,43 @@ class Button():
         ])
         screen.blit(self.buttonSurface, self.buttonRect)
 
-def myFunction():
+def myTomato():
     print('test works')
+    myTomato = True
+def mySpinach():
+    print('test works')
+    mySpinach = True
+def myMushroom():
+    print('test works')
+    myMushroom = True
+def myPineapple():
+    print('test works')
+    myPineapple = True
+def myPepperoni():
+    print('test works')
+    myPepperoni = True
+def mySausage():
+    print('test works')
+    mySausage = True
+def myHam():
+    print('test works')
+    myHam = True
+def myNext():
+    print('test works')
+def myBack():
+    print('test works')
+    myBack = True
+  
+tomato = Button(95 , 95, 120, 30, 'TOMATOES', myTomato)
+spinach = Button(95, 145, 120, 30, 'SPINACH', mySpinach)
+mushroom = Button(235, 95, 120, 30, 'MUSHROOM', myMushroom)
+pineapple = Button(235, 145, 120, 30, 'PINEAPPLE', myPineapple)
+pepperoni = Button(95, 195, 120, 30, 'PEPPERONI', myPepperoni)
+sausage = Button(235, 195, 120, 30, 'SAUSAGE', mySausage)
+ham = Button(155, 245, 120, 30, 'HAM', myHam)
 
-
-
-tomato = Button(95 , 95, 120, 30, 'TOMATOES', myFunction,)
-spinach = Button(95, 145, 120, 30, 'SPINACH', myFunction)
-mushroom = Button(235, 95, 120, 30, 'MUSHROOM', myFunction)
-pineapple = Button(235, 145, 120, 30, 'PINEAPPLE', myFunction)
-pepperoni = Button(95, 195, 120, 30, 'PEPPERONI', myFunction)
-sausage = Button(235, 195, 120, 30, 'SAUSAGE', myFunction)
-ham = Button(155, 245, 120, 30, 'HAM', myFunction)
+next = Button(270, 290, 120, 30, 'NEXT', myNext)
+back = Button(50, 290, 120, 30, 'BACK', myBack)
 
 while True:
   screen.fill("#D9E5D6")
@@ -106,4 +126,3 @@ while True:
 
 
 
-exit.onclick()

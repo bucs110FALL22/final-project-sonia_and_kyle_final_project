@@ -7,13 +7,13 @@ y = 600
 screen = pygame.display.set_mode((x,y))
 
 
-crust = pygame.image.load('assets/crust.png').convert_alpha()
-crust = pygame.transform.scale(crust, (300,300))
+mushroom = pygame.image.load('assets/mushroom.png').convert_alpha()
+mushroom = pygame.transform.scale(mushroom, (70,70))
 
 
-screen.blit(crust, (80,10))
+window.blit(mushroom, (25,0))
 
-pygame.display.flip()
+screen.display.flip()
 
 status = True
 while (status):

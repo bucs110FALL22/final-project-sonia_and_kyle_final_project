@@ -7,11 +7,7 @@ fps = 60
 fpsClock = pygame.time.Clock()
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
-
-#title = pygame.font.SysFont('arial', 50)
-#pygame.title.Font.set_bold()
-#title.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
- 
+title = pygame.display.set_caption("choose a sauce")
 
 
 font = pygame.font.SysFont('arial', 16)
@@ -29,15 +25,15 @@ class Button():
     
 
         self.fillColors = {
-            'normal': '#FF9B42',
-            'hover': '#F7A072',
-            'pressed': '#F7A072',
+            'normal': '#F786AF',
+            'hover': '#F68393',
+            'pressed': '#F68393',
         }
 
         self.buttonSurface = pygame.Surface((self.width, self.height))
         self.buttonRect = pygame.Rect(self.x, self.y, self.width, self.height)
 
-        self.buttonSurf = font.render(buttonText, True, '#C4510C')
+        self.buttonSurf = font.render(buttonText, True, '#CB4154')
 
         self.alreadyPressed = False
 
@@ -72,21 +68,23 @@ class Button():
 
 def myFunction():
     print('test works')
+def myNext():
+    print('test works')
+def myBack():
+    print('test works')
 
+tomato = Button(95 , 165, 120, 30, 'TOMATO', myFunction)
+pesto = Button(95, 115, 120, 30, 'PESTO', myFunction)
+alfredo = Button(235, 165, 120, 30, 'ALFREDO', myFunction)
+barbecue = Button(235, 115, 120, 30, 'BARBECUE', myFunction)
 
-
-tomato = Button(95 , 95, 120, 30, 'TOMATOES', myFunction,)
-spinach = Button(95, 145, 120, 30, 'SPINACH', myFunction)
-mushroom = Button(235, 95, 120, 30, 'MUSHROOM', myFunction)
-pineapple = Button(235, 145, 120, 30, 'PINEAPPLE', myFunction)
-pepperoni = Button(95, 195, 120, 30, 'PEPPERONI', myFunction)
-sausage = Button(235, 195, 120, 30, 'SAUSAGE', myFunction)
-ham = Button(155, 245, 120, 30, 'HAM', myFunction)
+next = Button(270, 290, 120, 30, 'NEXT', myNext)
+back = Button(50, 290, 120, 30, 'BACK', myBack)
 
 while True:
   screen.fill("#D9E5D6")
   font = pygame.font.SysFont('arial', 30)
-  text = font.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
+  text = font.render("PICK YOUR SAUCE!", True, 'darkseagreen')
   textRect = text.get_rect()
   textRect.center = (225, 40)
   screen.blit(text,textRect)
@@ -103,7 +101,3 @@ while True:
 
   pygame.display.flip()
   fpsClock.tick(fps)
-
-
-
-exit.onclick()

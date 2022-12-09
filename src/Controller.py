@@ -7,9 +7,9 @@ class Controller:
     pygame.init()
     pygame.display.init()
     self.screen = pygame.display.set_mode(size = (500,300))
-    windowsize = pygame.display.get_window_size()
-    radius = int(windowsize[0]/2)
-    center_of_screen = (windowsize[0]/2, windowsize[1]/2)
+    pygame.display.set_caption("Make Your Own Pizza")
+    
+   
     #self.controller = Screens()
     self.screen.fill("darkslategrey")
     

@@ -1,21 +1,14 @@
 import sys
 import pygame
 
-
 pygame.init()
 fps = 60
 fpsClock = pygame.time.Clock()
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
+title = pygame.display.set_caption("welcome")
 
-#title = pygame.font.SysFont('arial', 50)
-#pygame.title.Font.set_bold()
-#title.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
- 
-
-
-font = pygame.font.SysFont('arial', 16)
-
+font = pygame.font.SysFont('arial', 28)
 objects = []
 
 class Button():
@@ -29,15 +22,15 @@ class Button():
     
 
         self.fillColors = {
-            'normal': '#FF9B42',
-            'hover': '#F7A072',
-            'pressed': '#F7A072',
+            'normal': '#D9E5D6',
+            'hover': '#EDDEA4',
+            'pressed': '#EDDEA4',
         }
 
         self.buttonSurface = pygame.Surface((self.width, self.height))
         self.buttonRect = pygame.Rect(self.x, self.y, self.width, self.height)
 
-        self.buttonSurf = font.render(buttonText, True, '#C4510C')
+        self.buttonSurf = font.render(buttonText, True, '#91AB8B')
 
         self.alreadyPressed = False
 
@@ -70,27 +63,26 @@ class Button():
         ])
         screen.blit(self.buttonSurface, self.buttonRect)
 
-def myFunction():
+def startButton():
     print('test works')
+    startButton = True
+  
+startButton = Button(180 , 300, 250, 110, 'START', startButton)
 
-
-
-tomato = Button(95 , 95, 120, 30, 'TOMATOES', myFunction,)
-spinach = Button(95, 145, 120, 30, 'SPINACH', myFunction)
-mushroom = Button(235, 95, 120, 30, 'MUSHROOM', myFunction)
-pineapple = Button(235, 145, 120, 30, 'PINEAPPLE', myFunction)
-pepperoni = Button(95, 195, 120, 30, 'PEPPERONI', myFunction)
-sausage = Button(235, 195, 120, 30, 'SAUSAGE', myFunction)
-ham = Button(155, 245, 120, 30, 'HAM', myFunction)
 
 while True:
-  screen.fill("#D9E5D6")
-  font = pygame.font.SysFont('arial', 30)
-  text = font.render("PICK YOUR TOPPINGS!", True, 'darkseagreen')
+  screen.fill("#0FA3B1")
+  font = pygame.font.SysFont('arial', 35, bold = pygame.font.Font.bold)
+  text = font.render("MAKE YOUR OWN PIZZA", True, '#05808C')
+
   textRect = text.get_rect()
-  textRect.center = (225, 40)
+  textRect.center = (300, 40)
   screen.blit(text,textRect)
 
+  mascot = pygame.image.load('assets/mascot.png')
+  mascot = pygame.transform.scale(mascot, (200,200))
+  screen.blit(mascot, (220,100))
+  pygame.display.flip()
   
   
   for event in pygame.event.get():
@@ -103,7 +95,3 @@ while True:
 
   pygame.display.flip()
   fpsClock.tick(fps)
-
-
-
-exit.onclick()

@@ -7,11 +7,11 @@ y = 600
 screen = pygame.display.set_mode((x,y))
 
 
-crust = pygame.image.load('assets/crust.png').convert_alpha()
-crust = pygame.transform.scale(crust, (300,300))
+alfredo = pygame.image.load('assets/alfredosauce.png').convert_alpha()
+alfredo = pygame.transform.scale(alfredo, (70,70))
 
 
-screen.blit(crust, (80,10))
+screen.blit(alfredo, (25,0))
 
 pygame.display.flip()
 
@@ -20,3 +20,4 @@ while (status):
   for i in pygame.event.get():
     if i.type == pygame.QUIT:
       status == False
+

@@ -7,11 +7,11 @@ y = 600
 screen = pygame.display.set_mode((x,y))
 
 
-crust = pygame.image.load('assets/crust.png').convert_alpha()
-crust = pygame.transform.scale(crust, (300,300))
+tomato = pygame.image.load('assets/tomato.png').convert_alpha()
+tomato = pygame.transform.scale(tomato, (30,30))
 
 
-screen.blit(crust, (80,10))
+screen.blit(tomato, (0,0))
 
 pygame.display.flip()
 
