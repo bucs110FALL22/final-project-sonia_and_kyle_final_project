@@ -7,7 +7,7 @@
 
 << [[repl](#)](https://github.com/bucs110FALL22/final-project-sonia_and_kyle_final_project.git) >>
 
-<< [link to demo presentation slides](#) >>
+<< [link to demo presentation slides](#)https://docs.google.com/presentation/d/1viWnjFEw0b4hYLp0r7auCDkJQ_lGty-BbOPm1tMHcy8/edit?usp=sharing >>
 
 ### Team: Sonia & Kyle
 #### Sonia Rai and Kyle Mejorada
@@ -29,7 +29,8 @@ The object of the game is simply to create your own pizza. Choose between many d
 - **Final GUI**
   ![welcomescreen](welcomescreen.png)
   ![scsscreen](scsscreen.png)
-  ![image](image.png)
+  ![pizzasauce](pizzasauce.png)
+  ![tpscreen](tpscreen.png)
   ![pizzascreen](pizzascreen.png)
 ***        
 
@@ -89,9 +90,11 @@ Worked on individual screens together and debugged each block of code before mov
 |  1                   | Run Program  |GUI window appears with start button  |
 |  2                   | click start button   | display changes to sauce screen      |
 |  3                   | click any of the sauce options  |  whichever sauce is clicked is recorded  |
-|  4                   | click next button  |  display changes to toppings screen  |
+|  4                   | click next button  |  display changes to show your pizza sauce  |
 |  5                   |  click back button  |  display is changed to welcome screen  |
-|  6                   |  click any of the topping options  |  whichever topping is clicked is recorded  |
-|  7                   | click next button  |  display changes to pizza screen  |
-|  8                   |  click back button  |  display is changed to sauce screen  |
+|  6                   | click next button  |  display changes to toppings screen  |
+|  7                   |  click back button  |  display is changed to sauce screen  |
+|  8                   |  click any of the topping options  |  whichever topping is clicked is recorded  |
+|  9                   | click next button  |  display changes to pizza screen  |
+|  10                   |  click back button  |  display is changed to show pizza sauce  |
 
