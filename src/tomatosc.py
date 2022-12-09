@@ -7,9 +7,11 @@ y = 600
 screen = pygame.display.set_mode((x,y))
 
 
-alfredo = pygame.image.load('assets/alfredosauce.png').convert_alpha()
-alfredo = pygame.transform.scale(alfredo, (290,290))
-screen.blit(alfredo, (80,10))
+tomatosc = pygame.image.load('assets/tomatoscsauce.png').convert_alpha()
+tomatosc = pygame.transform.scale(tomatosc, (290,290))
+
+
+screen.blit(tomatosc, (80,10))
 
 pygame.display.flip()
 
@@ -18,4 +20,3 @@ while (status):
   for i in pygame.event.get():
     if i.type == pygame.QUIT:
       status == False
-

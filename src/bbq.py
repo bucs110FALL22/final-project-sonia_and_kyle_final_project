@@ -8,10 +8,10 @@ screen = pygame.display.set_mode((x,y))
 
 
 bbq = pygame.image.load('assets/bbqsauce.png').convert_alpha()
-bbq = pygame.transform.scale(bbq, (70,70))
+bbq = pygame.transform.scale(bbq, (290,290))
 
 
-screen.blit(bbq, (25,0))
+screen.blit(bbq, (80,10))
 
 pygame.display.flip()
 

@@ -30,6 +30,7 @@ The object of the game is simply to create your own pizza. Choose between many d
   ![welcomescreen](welcomescreen.png)
   ![scsscreen](scsscreen.png)
   ![image](image.png)
+  ![pizzascreen](pizzascreen.png)
 ***        
 
 ## Program Design
