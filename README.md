@@ -16,14 +16,14 @@
 
 ## Project Description
 
-The object of the game is simply to create your own pizza. Choose between many different sauces and toppings to customize your pie!
+The object of the game is simply to create your own pizza. Choose between many different sauce and topping options to customize your pie!
 
 ***    
 
 ## User Interface Design
 
 - **Initial Concept**
-  
+  ![initialconcept](initialconcept.png)
     
     
 - **Final GUI**
@@ -49,44 +49,47 @@ The Project is broken down into the following file structure:
 
 * main.py
 * src
-    screens
-      saucescreen.py
-      scscreen.py
-      tpscreen.py
-    crust.py
-    ham.py
-    mushroom.py
-    pepperoni.py
-    pineapple.py
-    sausage.py
-    spinach.py
-    tomato.py
+  * screens
+  * saucescreen.py
+  * scscreen.py
+  * tpscreen.py
+    * crust.py
+    * ham.py
+    * mushroom.py
+    * pepperoni.py
+    * pineapple.py
+    * sausage.py
+    * spinach.py
+    * tomato.py
 * assets
-    crust.png
-    ham.png
-    mushroom.png
-    pepperoni.png
-    pineapple.png
-    sausage.png
-    spinach.png
-    tomato.png
+  * crust.png
+  * ham.png
+  * mushroom.png
+  * pepperoni.png
+  * pineapple.png
+  * sausage.png
+  * spinach.png
+  * tomato.png
 
 ***
 
 ## Tasks and Responsibilities 
-
+Collaborated on all the code, not much done individually.
    
 
 ## Testing
+Worked on individual screens together and debugged each block of code before moving on to another screen. 
 
-Worked on each small part together and debugged before moving on to another small part. 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Run Program  |GUI window appears with start button  |
-|  2                   | click start button   | display changes to toppings screen      |
+|  2                   | click start button   | display changes to sauce screen      |
 |  3                   | click any of the sauce options  |  whichever sauce is clicked is recorded  |
 |  4                   | click next button  |  display changes to toppings screen  |
-|  5                   |  click any of the toppings  |  Whichever toppings are clicked are recorded  |
-|  6                   |  click next button  |  display changes to pizza screen where you will watch your pizza get built  |
+|  5                   |  click back button  |  display is changed to welcome screen  |
+|  6                   |  click any of the topping options  |  whichever topping is clicked is recorded  |
+|  7                   | click next button  |  display changes to pizza screen  |
+|  8                   |  click back button  |  display is changed to sauce screen  |
+|  9                   |  
